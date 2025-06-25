@@ -33,7 +33,7 @@ To run this application on your local machine, follow these steps:
 2.  **Clone the Repository (or Download):**
     * **Using Git:**
         ```bash
-        git clone [https://github.com/Aditichoubey-adi/StudentRecordSystem.git](https://github.com/Aditichoubey-adi/StudentRecordSystem.git)
+        github  https://github.com/Aditichoubey-adi/StudentRecordSystemtem.git)
         ```
         
     * **Direct Download:**
