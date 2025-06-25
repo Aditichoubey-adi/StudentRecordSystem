@@ -35,7 +35,7 @@ To run this application on your local machine, follow these steps:
         ```bash
         git clone [https://github.com/Aditichoubey-adi/StudentRecordSystem.git](https://github.com/Aditichoubey-adi/StudentRecordSystem.git)
         ```
-        (Make sure to replace `Aditichoubey-adi` with your actual GitHub username if it's different, or get the correct clone URL from your GitHub repo page).
+        
     * **Direct Download:**
         You can also download the project as a ZIP file from GitHub and extract it.
 
