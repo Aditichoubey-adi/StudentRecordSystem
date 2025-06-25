@@ -5,8 +5,8 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Collections; // NEW: For sorting
-import java.util.Comparator;  // NEW: For custom sorting logic
+import java.util.Collections; 
+import java.util.Comparator;  
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -29,17 +29,17 @@ public class StudentRecordSystem {
             System.out.println("3. Update Student Record");
             System.out.println("4. Delete Student Record");
             System.out.println("5. Search Student by Name");
-            System.out.println("6. Sort Students"); // NEW: Sort option
-            System.out.println("7. Exit");          // Option number changed
-            System.out.print("Enter your choice (1-7): "); // Prompt updated
+            System.out.println("6. Sort Students"); 
+            System.out.println("7. Exit");          
+            System.out.print("Enter your choice (1-7): "); 
 
             int choice = 0;
             try {
                 choice = scanner.nextInt();
-                scanner.nextLine(); // Consume the remaining newline character
+                scanner.nextLine(); 
             } catch (InputMismatchException e) {
-                System.out.println("Invalid input. Please enter a number between 1 and 7."); // Prompt updated
-                scanner.nextLine(); // Clear the invalid input from the scanner buffer
+                System.out.println("Invalid input. Please enter a number between 1 and 7."); 
+                scanner.nextLine(); 
                 continue;
             }
 
@@ -59,10 +59,10 @@ public class StudentRecordSystem {
                 case 5:
                     searchStudentByName();
                     break;
-                case 6: // NEW case for Sort Students
+                case 6:
                     sortStudents();
                     break;
-                case 7: // Exit choice updated to 7
+                case 7: 
                     running = false;
                     saveStudentsToFile();
                     System.out.println("Exiting Student Record System. Goodbye!");
@@ -74,7 +74,7 @@ public class StudentRecordSystem {
         scanner.close();
     }
 
-    // --- NEW: Method to Sort Students ---
+    
     private static void sortStudents() {
         if (studentList.isEmpty()) {
             System.out.println("No students to sort.");
@@ -144,7 +144,7 @@ public class StudentRecordSystem {
     }
 
 
-    // --- Existing Methods (No change in logic, just re-arranged for readability) ---
+   
 
     private static void loadStudentsFromFile() {
         try (BufferedReader reader = new BufferedReader(new FileReader(DATA_FILE))) {
